@@ -11,7 +11,7 @@ export const experience = [
     role: "Autonomous Rover Embedded Engineer",
     place: "University of Toronto Robotics Association",
     description: "Architected robust fault monitoring, telemetry, and control systems to build a field-ready embedded autonomy framework that significantly improved the competition rover's reliability and operational visibility.",
-    tools: ["C++", "FreeRTOS", "ROS 2", "PyQt5", "Python", "ESP32"],
+    tools: ["C++", "ROS 2", "PyQt5", "Python", "ESP32"],
   },
   {
     date: "Sep 2024 – Jun 2025",
