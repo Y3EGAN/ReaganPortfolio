@@ -35,6 +35,7 @@ export default function Home() {
           </div>
           <p className="role">Engineering Science student<br />University of Toronto</p>
           <p className="summary">I build the bridge that brings intelligent systems into the real world.</p>
+          <a className="profile-resume" href="/HuReaganCV_2026.pdf" download>Download résumé ↓</a>
           <dl className="quick-facts">
             <div><dt>Focus</dt><dd>Software · AI · Robotics</dd></div>
             <div><dt>GPA</dt><dd>{education.gpa}</dd></div>
@@ -85,7 +86,6 @@ export default function Home() {
           <div className="contact-links">
             <a href="https://github.com/Y3EGAN" target="_blank" rel="noreferrer">GitHub <ExternalArrow /></a>
             <a href="https://www.linkedin.com/in/reagan-hu-672a22305" target="_blank" rel="noreferrer">LinkedIn <ExternalArrow /></a>
-            <a href="/HuReaganCV_2026.pdf" download>Download CV ↓</a>
           </div>
         </footer>
       </div>

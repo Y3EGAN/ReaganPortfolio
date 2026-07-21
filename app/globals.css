@@ -35,7 +35,8 @@ h1, h2, h3, p { margin-top: 0; }
 .chinese-inline { font: 700 var(--name-size)/.9 "STKaiti", "KaiTi", "Microsoft YaHei", "Noto Serif CJK SC", serif; letter-spacing: .02em; }
 .role { margin: 28px 0 0; color: var(--muted); font: 500 11px/1.55 var(--mono); letter-spacing: .03em; text-transform: uppercase; }
 .summary { max-width: 530px; margin: clamp(55px, 8vh, 95px) 0 0; font-size: clamp(20px, 1.65vw, 27px); font-weight: 500; letter-spacing: -.025em; line-height: 1.35; }
-.quick-facts { margin: 52px 0 0; display: grid; grid-template-columns: .65fr .6fr 1.45fr; border-top: 1px solid rgba(255,255,255,.72); }
+.profile-resume { width: max-content; margin-top: 28px; padding-bottom: 6px; color: var(--orange); border-bottom: 1px solid currentColor; font: 700 9px var(--mono); letter-spacing: .12em; text-transform: uppercase; }
+.quick-facts { margin: 38px 0 0; display: grid; grid-template-columns: .65fr .6fr 1.45fr; border-top: 1px solid rgba(255,255,255,.72); }
 .quick-facts div { padding: 14px 14px 0 0; }
 .quick-facts div + div { padding-left: 14px; border-left: 1px solid var(--line); }
 .quick-facts dt { color: var(--muted); font: 600 8px var(--mono); letter-spacing: .13em; text-transform: uppercase; }
@@ -66,7 +67,7 @@ h1, h2, h3, p { margin-top: 0; }
 
 .contact { min-height: 72svh; display: flex; flex-direction: column; justify-content: center; border-top: 1px solid rgba(255,255,255,.72); background: rgba(1,6,9,.3); }
 .email { display: inline-block; width: max-content; max-width: 100%; padding-bottom: 6px; border-bottom: 1px solid rgba(255,255,255,.5); font-size: clamp(25px, 2.7vw, 42px); font-weight: 600; letter-spacing: -.045em; }
-.contact-links { margin-top: 76px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+.contact-links { margin-top: 76px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; }
 .contact-links a { display: flex; justify-content: space-between; padding-top: 11px; border-top: 1px solid var(--line); font: 600 8px var(--mono); letter-spacing: .08em; text-transform: uppercase; }
 .contact-links a span { color: var(--orange); }
 
