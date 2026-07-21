@@ -3,7 +3,7 @@ export const experience = [
     date: "May – Aug 2026",
     role: "AI Robotics Engineer Intern",
     place: "Acceleration Consortium",
-    description: "Built robot-learning infrastructure for manipulation experiments across Isaac Sim, demonstration collection, OpenPi deployment, automated annotation, and stereo VR teleoperation.",
+    description: "Built robot-learning infrastructure for manipulation research in the AI and Automation Lab at the Acceleration Consortium under Staff Scientist Kourosh Darvish and Prof. Alán Aspuru-Guzik. Developed simulation, data, and deployment pipelines spanning NVIDIA Isaac Sim, demonstration collection, OpenPI policy deployment, automated annotation, and stereo VR teleoperation.",
     tools: ["Isaac Sim", "Isaac Lab", "OpenPi", "SAM 2", "TensorFlow", "PyTorch", "JAX", "CloudXR", "ZED SDK"],
   },
   {
