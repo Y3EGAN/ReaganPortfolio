@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Gallery from "@/components/Gallery";
 import { education, experience, projects } from "@/content/site";
 
 function ExternalArrow() {
@@ -24,7 +25,8 @@ export default function Home() {
         <nav className="pane-nav" aria-label="Primary navigation">
           <a href="#work">Work</a>
           <a href="#projects">Projects</a>
-          <a href="/HuReaganCV_2026.pdf" download>CV ↓</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact Me</a>
         </nav>
 
         <section id="profile" className="profile">
@@ -80,7 +82,13 @@ export default function Home() {
           <p className="education-note">GPA {education.gpa} · {education.award}</p>
         </section>
 
-        <footer className="contact">
+        <section id="gallery" className="section-block gallery-block">
+          <div className="section-title"><span>04</span><h2>My Gallery</h2></div>
+          <p className="gallery-intro">A small collection of places that made me stop and look twice.</p>
+          <Gallery />
+        </section>
+
+        <footer id="contact" className="contact">
           <p className="section-label">CONTACT</p>
           <a className="email" href="mailto:reagan.hu@gmail.com">reagan.hu@gmail.com</a>
           <div className="contact-links">
