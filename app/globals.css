@@ -148,6 +148,7 @@ h1, h2, h3, p { margin-top: 0; }
   .tools { grid-column: 1; margin-top: -5px; }
   .project-item > div { display: block; }
   .project-item span { display: block; margin-top: 4px; }
+  .project-item .tools { margin-top: 20px; }
   .contact-links { grid-template-columns: 1fr; gap: 20px; }
   .gallery-grid { grid-template-columns: 1fr; gap: 40px; }
   .gallery-open { display: none; }
