@@ -17,7 +17,7 @@ export default function Home() {
           sizes="100vw"
         />
         <div className="portrait-overlay" aria-hidden="true" />
-        <p className="photo-marker">Toronto, Canada</p>
+        <p className="photo-marker">Photo / Malibu, California</p>
       </aside>
 
       <div className="resume-pane">
@@ -28,15 +28,15 @@ export default function Home() {
         </nav>
 
         <section id="profile" className="profile">
-          <p className="section-label">PROFILE</p>
-          <h1>Reagan Hu</h1>
+          <p className="section-label">PORTFOLIO / 2026</p>
+          <div className="name-lockup">
+            <h1>Reagan Hu</h1>
+            <span className="chinese-inline" lang="zh-Hans">胡予潇</span>
+          </div>
           <p className="role">Engineering Science student<br />University of Toronto</p>
-          <p className="summary">
-            I work on robotics systems across simulation, learned policies,
-            embedded control, and teleoperation.
-          </p>
+          <p className="summary">I build the bridge that brings intelligent systems into the real world.</p>
           <dl className="quick-facts">
-            <div><dt>Focus</dt><dd>Robotics</dd></div>
+            <div><dt>Focus</dt><dd>Software · AI · Robotics</dd></div>
             <div><dt>GPA</dt><dd>{education.gpa}</dd></div>
             <div><dt>Current</dt><dd>Acceleration Consortium</dd></div>
           </dl>
@@ -52,9 +52,7 @@ export default function Home() {
                   <h3>{item.role}</h3>
                   <span>{item.place}</span>
                 </div>
-                <ul>
-                  {item.bullets.map((bullet) => <li key={bullet}>{bullet}</li>)}
-                </ul>
+                <p className="job-description">{item.description}</p>
                 <p className="tools">{item.tools.join(" · ")}</p>
               </article>
             ))}
@@ -86,7 +84,7 @@ export default function Home() {
           <a className="email" href="mailto:reagan.hu@gmail.com">reagan.hu@gmail.com</a>
           <div className="contact-links">
             <a href="https://github.com/Y3EGAN" target="_blank" rel="noreferrer">GitHub <ExternalArrow /></a>
-            <a href="https://www.linkedin.com/in/reagan-hu" target="_blank" rel="noreferrer">LinkedIn <ExternalArrow /></a>
+            <a href="https://www.linkedin.com/in/reagan-hu-672a22305" target="_blank" rel="noreferrer">LinkedIn <ExternalArrow /></a>
             <a href="/HuReaganCV_2026.pdf" download>Download CV ↓</a>
           </div>
         </footer>
