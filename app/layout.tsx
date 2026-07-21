@@ -3,11 +3,11 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://reaganhu.dev"),
-  title: "Reagan Hu — Robotics Engineer",
+  title: "Reagan Hu",
   description: "Reagan Hu builds robotic and intelligent systems across perception, control, learning, hardware, and human interaction.",
   keywords: ["Reagan Hu", "robotics", "machine learning", "computer vision", "control", "University of Toronto"],
   openGraph: {
-    title: "Reagan Hu — Robotics Engineer",
+    title: "Reagan Hu",
     description: "Engineering Science student working on robot learning, embedded control, and teleoperation.",
     type: "website",
     images: [{ url: "/images/reagan-horizon-original.jpg", width: 1824, height: 1368 }],
