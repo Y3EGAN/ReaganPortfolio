@@ -138,7 +138,7 @@ h1, h2, h3, p { margin-top: 0; }
   .pane-nav { justify-content: space-between; gap: 8px; padding-right: 16px; padding-left: 16px; }
   .pane-nav:before { display: none; }
   .profile, .section-block, .contact { padding-right: 22px; padding-left: 22px; }
-  .name-lockup { --name-size: clamp(30px, 9.2vw, 44px); flex-direction: column; align-items: flex-start; gap: 14px; white-space: normal; }
+  .name-lockup { --name-size: clamp(36px, 11vw, 52px); flex-direction: column; align-items: flex-start; gap: 22px; white-space: normal; }
   .summary { font-size: 21px; }
   .quick-facts { grid-template-columns: 1fr; }
   .quick-facts div + div { margin-top: 13px; padding-left: 0; border-left: 0; }
