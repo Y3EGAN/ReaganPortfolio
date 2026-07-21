@@ -41,5 +41,6 @@ export const education = {
   school: "University of Toronto",
   degree: "BASc Engineering Science · Co-op",
   gpa: "3.8 / 4.0",
-  award: "$10,000 University of Toronto Scholars Scholarship",
+  honours: "Dean’s Honour List",
+  award: "University of Toronto Scholars Scholarship ($10,000)",
 };

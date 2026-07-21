@@ -79,7 +79,8 @@ export default function Home() {
           <div className="section-title"><span>03</span><h2>Education</h2></div>
           <h3>{education.school}</h3>
           <p>{education.degree}</p>
-          <p className="education-note">GPA {education.gpa} · {education.award}</p>
+          <p className="education-note">{education.honours} · GPA {education.gpa}</p>
+          <p className="education-note education-award">{education.award}</p>
         </section>
 
         <section id="gallery" className="section-block gallery-block">
