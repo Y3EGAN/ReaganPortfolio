@@ -3,7 +3,7 @@
   --muted: rgba(244, 241, 233, .64);
   --orange: #ff7440;
   --line: rgba(255, 255, 255, .2);
-  --sans: Arial, "Helvetica Neue", sans-serif;
+  --sans: "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
   --mono: "Cascadia Mono", "SFMono-Regular", Consolas, monospace;
 }
 
