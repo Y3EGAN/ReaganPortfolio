@@ -8,8 +8,8 @@ export const experience = [
   },
   {
     date: "Sep 2025 – Apr 2026",
-    role: "Autonomous Rover Embedded Engineer",
-    place: "University of Toronto Robotics Association",
+    role: "Embedded Systems Engineer",
+    place: "U of T Robotics Association Autonomous Rover Team",
     description: "Architected robust fault monitoring, telemetry, and control systems to build a field-ready embedded autonomy framework that significantly improved the competition rover's reliability and operational visibility.",
     tools: ["C++", "ROS 2", "PyQt5", "Python", "ESP32"],
   },
@@ -17,7 +17,7 @@ export const experience = [
     date: "Sep 2024 – Jun 2025",
     role: "National Director of Design",
     place: "Hot Potato Initiative",
-    description: "Led the design function for a national youth advocacy organization, translating campaign goals into cohesive visual communication across multiple teams.",
+    description: "Led the design function for a national youth advocacy nonprofit organization, translating campaign goals into cohesive visual communication across multiple teams.",
     tools: ["Design", "Project management", "Cross-team collaboration"],
   },
 ];
@@ -25,12 +25,14 @@ export const experience = [
 export const projects = [
   {
     title: "AroundU",
+    url: "https://github.com/Rye-06/AroundU",
     type: "Campus social platform",
     description: "Created a full-stack platform designed to make campus communities easier to discover and navigate through events, messaging, location context, and personalized recommendations.",
     tools: ["React", "TypeScript", "Node.js", "Supabase", "OpenAI API"],
   },
   {
     title: "Fast and Flurrious",
+    url: "https://github.com/Hzhao7/UTRA-Hacks",
     type: "Autonomous rover",
     description: "Built an autonomous rover capable of navigating its environment and completing object manipulation tasks using onboard sensing and control.",
     tools: ["C++", "FreeRTOS", "Arduino", "PID control"],

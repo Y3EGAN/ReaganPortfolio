@@ -39,7 +39,7 @@ export default function Home() {
           <p className="summary">I build the bridge that brings intelligent systems into the real world.</p>
           <a className="profile-resume" href="/HuReaganCV_2026.pdf" download>Download résumé ↓</a>
           <dl className="quick-facts">
-            <div><dt>Focus</dt><dd>Software · AI · Robotics</dd></div>
+            <div><dt>Focus</dt><dd>AI · Robotics · Software</dd></div>
             <div><dt>GPA</dt><dd>{education.gpa}</dd></div>
             <div><dt>Current</dt><dd>Acceleration Consortium</dd></div>
           </dl>
@@ -63,11 +63,18 @@ export default function Home() {
         </section>
 
         <section id="projects" className="section-block">
-          <div className="section-title"><span>02</span><h2>Projects</h2></div>
+          <div className="section-title"><span>02</span><h2>Select Projects</h2></div>
           <div className="project-list">
             {projects.map((project) => (
               <article className="project-item" key={project.title}>
-                <div><h3>{project.title}</h3><span>{project.type}</span></div>
+                <div>
+                  <h3>
+                    <a href={project.url} target="_blank" rel="noreferrer">
+                      {project.title} <ExternalArrow />
+                    </a>
+                  </h3>
+                  <span>{project.type}</span>
+                </div>
                 <p>{project.description}</p>
                 <p className="tools">{project.tools.join(" · ")}</p>
               </article>
