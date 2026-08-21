@@ -4,14 +4,14 @@ export const experience = [
     role: "AI Robotics Engineer Intern",
     place: "Acceleration Consortium",
     description: "Built robot-learning infrastructure in the AI & Automation Lab at the Acceleration Consortium under Staff Scientist Kourosh Darvish and Prof. Alán Aspuru-Guzik. ",
-    tools: ["Isaac Sim", "Isaac Lab", "OpenPi", "SAM 2", "TensorFlow", "PyTorch", "JAX", "CloudXR", "ZED SDK"],
+    tools: ["Isaac Sim", "VLA Fine-Tuning", "Visual Servo", "Teleoperation"],
   },
   {
     date: "Sep 2025 – Apr 2026",
     role: "Embedded Systems Engineer",
     place: "U of T Robotics Association Autonomous Rover Team",
     description: "Architected robust fault monitoring, telemetry, and control systems to build a field-ready embedded autonomy framework that significantly improved the competition rover's reliability and operational visibility.",
-    tools: ["C++", "ROS 2", "PyQt5", "Python", "ESP32"],
+    tools: ["C++", "ROS 2", "PyQt5", "Python"],
   },
   {
     date: "Sep 2024 – Jun 2025",

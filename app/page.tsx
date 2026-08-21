@@ -36,7 +36,7 @@ export default function Home() {
             <span className="chinese-inline" lang="zh-Hans">胡予潇</span>
           </div>
           <p className="role">Engineering Science student<br />University of Toronto</p>
-          <p className="summary">I build the bridge that brings intelligent systems into the real world.</p>
+          <p className="summary">Building the bridge that brings intelligent systems into the real world.</p>
           <a className="profile-resume" href="/HuReaganCV_2026.pdf" download>Download résumé ↓</a>
           <dl className="quick-facts">
             <div><dt>Focus</dt><dd>AI · Robotics · Software</dd></div>
@@ -92,7 +92,7 @@ export default function Home() {
 
         <section id="gallery" className="section-block gallery-block">
           <div className="section-title"><span>04</span><h2>My Gallery</h2></div>
-          <p className="gallery-intro">A small collection of places that made me stop and look twice.</p>
+          <p className="gallery-intro">Some places that made me stop and look twice.</p>
           <Gallery />
         </section>
 
