@@ -76,10 +76,9 @@ export default function Home() {
         <section id="projects" className="section-block">
           <SectionTitle number="02">Selected Projects</SectionTitle>
           <div className="project-list">
-            {projects.map((project, index) => (
+            {projects.map((project) => (
               <article className="project-item" key={project.title}>
                 <div className="project-topline">
-                  <span className="project-index" aria-hidden="true">0{index + 1} / 0{projects.length}</span>
                   <span>{project.type}</span>
                 </div>
                 <h3>{project.title}</h3>
@@ -103,8 +102,8 @@ export default function Home() {
 
         <aside className="contact-ribbon" aria-label="Contact Reagan">
           <div>
-            <p>Working on robotics or intelligent systems?</p>
-            <span>I would be glad to hear what you are building.</span>
+            <p>Open to opportunities across engineering, research, and beyond.</p>
+            <span>I&apos;d be glad to hear what you&apos;re working on.</span>
           </div>
           <a href="#contact">Let&apos;s talk <span aria-hidden="true">↓</span></a>
         </aside>
