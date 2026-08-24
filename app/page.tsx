@@ -6,9 +6,19 @@ function ExternalArrow() {
   return <span aria-hidden="true">↗</span>;
 }
 
+function SectionTitle({ number, children }: { number: string; children: React.ReactNode }) {
+  return (
+    <div className="section-title">
+      <span>{number}</span>
+      <h2>{children}</h2>
+    </div>
+  );
+}
+
 export default function Home() {
   return (
     <main className="portfolio">
+      <a className="skip-link" href="#work">Skip to experience</a>
       <aside className="portrait" aria-label="Portrait of Reagan Hu at sunset">
         <Image
           src="/images/reagan-horizon-original.jpg"
@@ -23,6 +33,7 @@ export default function Home() {
 
       <div className="resume-pane">
         <nav className="pane-nav" aria-label="Primary navigation">
+          <a className="nav-mark" href="#profile" aria-label="Back to top">RH</a>
           <a href="#work">Work</a>
           <a href="#projects">Projects</a>
           <a href="#gallery">Gallery</a>
@@ -46,7 +57,7 @@ export default function Home() {
         </section>
 
         <section id="work" className="section-block">
-          <div className="section-title"><span>01</span><h2>Experience</h2></div>
+          <SectionTitle number="01">Experience</SectionTitle>
           <div className="experience-list">
             {experience.map((item) => (
               <article className="experience-item" key={item.role}>
@@ -63,35 +74,43 @@ export default function Home() {
         </section>
 
         <section id="projects" className="section-block">
-          <div className="section-title"><span>02</span><h2>Select Projects</h2></div>
+          <SectionTitle number="02">Selected Projects</SectionTitle>
           <div className="project-list">
-            {projects.map((project) => (
+            {projects.map((project, index) => (
               <article className="project-item" key={project.title}>
-                <div>
-                  <h3>
-                    <a href={project.url} target="_blank" rel="noreferrer">
-                      {project.title} <ExternalArrow />
-                    </a>
-                  </h3>
+                <div className="project-topline">
+                  <span className="project-index" aria-hidden="true">0{index + 1} / 0{projects.length}</span>
                   <span>{project.type}</span>
                 </div>
+                <h3>{project.title}</h3>
                 <p>{project.description}</p>
                 <p className="tools">{project.tools.join(" · ")}</p>
+                <a className="project-link" href={project.url} target="_blank" rel="noreferrer">
+                  View repository <ExternalArrow />
+                </a>
               </article>
             ))}
           </div>
         </section>
 
         <section className="section-block education-block">
-          <div className="section-title"><span>03</span><h2>Education</h2></div>
+          <SectionTitle number="03">Education</SectionTitle>
           <h3>{education.school}</h3>
           <p>{education.degree}</p>
           <p className="education-note">{education.honours} · GPA {education.gpa}</p>
           <p className="education-note education-award">{education.award}</p>
         </section>
 
+        <aside className="contact-ribbon" aria-label="Contact Reagan">
+          <div>
+            <p>Working on robotics or intelligent systems?</p>
+            <span>I would be glad to hear what you are building.</span>
+          </div>
+          <a href="#contact">Let&apos;s talk <span aria-hidden="true">↓</span></a>
+        </aside>
+
         <section id="gallery" className="section-block gallery-block">
-          <div className="section-title"><span>04</span><h2>My Gallery</h2></div>
+          <SectionTitle number="04">My Gallery</SectionTitle>
           <p className="gallery-intro">Some places that made me stop and look twice.</p>
           <Gallery />
         </section>

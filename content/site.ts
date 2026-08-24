@@ -27,14 +27,14 @@ export const projects = [
     title: "AroundU",
     url: "https://github.com/Rye-06/AroundU",
     type: "Campus social platform",
-    description: "Created a full-stack platform designed to make campus communities easier to discover and navigate through events, messaging, location context, and personalized recommendations.",
-    tools: ["React", "TypeScript", "Node.js", "Supabase", "OpenAI API"],
+    description: "Full-stack platform for discovering campus communities through events, messaging, location context, and personalized recommendations.",
+    tools: ["React", "TypeScript", "Node.js", "Supabase"],
   },
   {
     title: "Fast and Flurrious",
     url: "https://github.com/Hzhao7/UTRA-Hacks",
     type: "Autonomous rover",
-    description: "Built an autonomous rover capable of navigating its environment and completing object manipulation tasks using onboard sensing and control.",
+    description: "Rover for autonomous navigation and completing object manipulation tasks using onboard sensing and control.",
     tools: ["C++", "FreeRTOS", "Arduino", "PID control"],
   },
 ];

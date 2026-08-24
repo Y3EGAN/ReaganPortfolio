@@ -31,7 +31,7 @@ export default function Gallery() {
         {photos.map((photo, index) => (
           <figure className={`gallery-photo gallery-photo-${index + 1}`} key={photo.src}>
             <button type="button" onClick={() => setActive(index)} aria-label={`Open photo: ${photo.place}`}>
-              <Image src={photo.src} alt={photo.alt} fill sizes="(max-width: 880px) 100vw, 42vw" />
+              <Image src={photo.src} alt={photo.alt} fill sizes="(max-width: 880px) 45vw, 28vw" />
               <span className="gallery-open" aria-hidden="true">View</span>
             </button>
             <figcaption><span>{photo.number}</span>{photo.place}</figcaption>
