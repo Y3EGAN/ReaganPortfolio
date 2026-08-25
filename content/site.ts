@@ -35,7 +35,7 @@ export const projects = [
     url: "https://github.com/Hzhao7/UTRA-Hacks",
     type: "Autonomous rover",
     description: "Rover for autonomous navigation and completing object manipulation tasks using onboard sensing and control.",
-    tools: ["C++", "FreeRTOS", "Arduino", "PID control"],
+    tools: ["C++", "FreeRTOS", "PID control"],
   },
 ];
 

@@ -103,7 +103,7 @@ export default function Home() {
         <aside className="contact-ribbon" aria-label="Contact Reagan">
           <div>
             <p>Open to opportunities across engineering, research, and beyond.</p>
-            <span>I&apos;d be glad to hear what you&apos;re working on.</span>
+            <span>I would love to hear what you&apos;re working on.</span>
           </div>
           <a href="#contact">Let&apos;s talk <span aria-hidden="true">↓</span></a>
         </aside>
