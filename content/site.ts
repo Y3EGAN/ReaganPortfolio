@@ -3,7 +3,7 @@ export const experience = [
     date: "May – Aug 2026",
     role: "AI Robotics Engineer Intern",
     place: "Acceleration Consortium",
-    description: "Built robot-learning infrastructure in the AI & Automation Lab at the Acceleration Consortium under Staff Scientist Kourosh Darvish and Prof. Alán Aspuru-Guzik. ",
+    description: "Built robot-learning infrastructure for automated scientific research in the AI & Automation Lab at the Acceleration Consortium under Staff Scientist Kourosh Darvish.",
     tools: ["Isaac Sim", "VLA Fine-Tuning", "Visual Servo", "Teleoperation"],
   },
   {
