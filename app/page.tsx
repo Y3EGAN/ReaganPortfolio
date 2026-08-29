@@ -34,7 +34,7 @@ export default function Home() {
       <div className="resume-pane">
         <nav className="pane-nav" aria-label="Primary navigation">
           <a className="nav-mark" href="#profile" aria-label="Back to top">RH</a>
-          <a href="#work">Work</a>
+          <a href="#work">Experience</a>
           <a href="#projects">Projects</a>
           <a href="#gallery">Gallery</a>
           <a href="#contact">Contact Me</a>
