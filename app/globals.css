@@ -96,12 +96,6 @@ section, footer { scroll-margin-top: 78px; }
 .education-block .education-note { width: fit-content; margin-top: 34px; padding: 0; border: 0; border-radius: 0; color: var(--muted); background: transparent; box-shadow: none; font: 600 11px/1.5 var(--mono); }
 .education-block .education-award { margin-top: 9px; color: var(--sunset-soft); }
 
-.contact-ribbon { padding: 42px clamp(38px, 5vw, 82px); display: flex; align-items: center; justify-content: space-between; gap: 28px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: rgba(212,106,58,.08); }
-.contact-ribbon p { margin: 0; font-family: var(--display); font-size: clamp(24px, 2.2vw, 31px); font-weight: 500; letter-spacing: -.025em; line-height: 1.08; }
-.contact-ribbon div > span { display: block; margin-top: 8px; color: var(--muted); font: 600 11px/1.5 var(--mono); }
-.contact-ribbon a { flex: 0 0 auto; min-height: 44px; padding: 0 0 4px; display: inline-flex; align-items: center; gap: 10px; border-bottom: 1px solid rgba(244,239,229,.55); color: var(--sunset-soft); font: 700 9px var(--mono); letter-spacing: .12em; text-transform: uppercase; transition: color .25s ease, border-color .25s ease; }
-.contact-ribbon a:hover { color: var(--paper); border-color: var(--paper); }
-
 .gallery-block { overflow: hidden; }
 .gallery-block .section-title { margin-bottom: 22px; }
 .gallery-intro { max-width: 440px; margin-bottom: 58px; color: var(--muted); font-family: var(--sans); font-size: 15px; font-style: normal; line-height: 1.7; }
@@ -212,9 +206,6 @@ section, footer { scroll-margin-top: 78px; }
   .project-item > p:not(.tools) { min-height: 0; }
   .project-item:hover { background: rgba(212,106,58,.08); }
   .project-item .tools { margin-top: 20px; }
-  .contact-ribbon { padding: 34px 24px; align-items: flex-start; flex-direction: column; gap: 20px; }
-  .contact-ribbon p { font-size: 27px; }
-  .contact-ribbon div > span { font-size: 13px; }
   .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px 12px; }
   .gallery-photo, .gallery-photo:nth-child(even), .gallery-photo-4 { width: 100% !important; margin-left: 0; }
   .gallery-photo button, .gallery-photo:nth-child(even) button { border-radius: 0; }

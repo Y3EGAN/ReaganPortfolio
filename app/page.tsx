@@ -100,14 +100,6 @@ export default function Home() {
           <p className="education-note education-award">{education.award}</p>
         </section>
 
-        <aside className="contact-ribbon" aria-label="Contact Reagan">
-          <div>
-            <p>Open to opportunities across engineering, research, and beyond.</p>
-            <span>I would love to hear what you&apos;re working on.</span>
-          </div>
-          <a href="#contact">Let&apos;s talk <span aria-hidden="true">↓</span></a>
-        </aside>
-
         <section id="gallery" className="section-block gallery-block">
           <SectionTitle number="04">My Gallery</SectionTitle>
           <p className="gallery-intro">Some places that made me stop and look twice.</p>
