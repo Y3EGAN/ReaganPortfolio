@@ -64,7 +64,7 @@ section, footer { scroll-margin-top: 78px; }
 .quick-facts div { min-width: 0; padding: 15px 16px; }
 .quick-facts div + div { border-left: 1px solid var(--line-strong); }
 .quick-facts dt { color: var(--sunset); font: 700 8px var(--mono); letter-spacing: .14em; text-transform: uppercase; }
-.quick-facts dd { margin: 7px 0 0; font-size: 13px; line-height: 1.4; }
+.quick-facts dd { margin: 7px 0 0; font-size: 15px; line-height: 1.35; }
 .section-block { padding-top: clamp(84px, 8vw, 118px); padding-bottom: clamp(84px, 8vw, 118px); border-top: 1px solid var(--line); background: rgba(3,13,18,.06); }
 .section-title { display: flex; align-items: baseline; gap: 18px; margin-bottom: 50px; }
 .section-title > span { color: var(--sunset-soft); font: 700 9px/1 var(--mono); letter-spacing: .12em; }

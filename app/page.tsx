@@ -52,7 +52,7 @@ export default function Home() {
           <dl className="quick-facts">
             <div><dt>Focus</dt><dd>AI · Robotics · Software</dd></div>
             <div><dt>GPA</dt><dd>{education.gpa}</dd></div>
-            <div><dt>Current</dt><dd>Acceleration Consortium</dd></div>
+            <div><dt>Current</dt><dd>aUToronto</dd></div>
           </dl>
         </section>
 
