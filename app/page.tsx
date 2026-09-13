@@ -64,9 +64,7 @@ export default function Home() {
                 <div className="item-heading">
                   <p>{item.date}</p>
                   <h3>{item.role}</h3>
-                  <span>
-                    {item.url ? <a href={item.url} target="_blank" rel="noreferrer">{item.place} <ExternalArrow /></a> : item.place}
-                  </span>
+                  <span>{item.place}</span>
                 </div>
                 <p className="job-description">{item.description}</p>
                 <p className="tools">{item.tools.join(" · ")}</p>

@@ -3,9 +3,8 @@ export const experience = [
     date: "Aug 2026 – Present",
     role: "Simulation Team Engineer",
     place: "aUToronto",
-    url: "https://www.autodrive.utoronto.ca/",
-    description: "Building simulation and validation infrastructure for path planning and vehicle controls as aUToronto prepares its autonomous vehicle for public roads.",
-    tools: ["Simulation", "Autonomous systems", "Team engineering"],
+    description: "Building simulation and validation infrastructure for path planning and vehicle controls as we prepare our autonomous vehicle for public roads.",
+    tools: ["Simulation", "Autonomous systems"],
   },
   {
     date: "May – Aug 2026",
