@@ -1,7 +1,7 @@
 export const experience = [
   {
     date: "Aug 2026 – Present",
-    role: "Simulation Team Engineer",
+    role: "Simulation Lead",
     place: "aUToronto",
     description: "Building simulation and validation infrastructure for path planning and vehicle controls as we prepare our autonomous vehicle for public roads.",
     tools: ["Simulation", "Autonomous systems"],
