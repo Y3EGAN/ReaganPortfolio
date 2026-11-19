@@ -28,13 +28,28 @@ section, footer { scroll-margin-top: 78px; }
 .skip-link { position: fixed; z-index: 1000; top: 12px; left: 12px; padding: 10px 14px; color: var(--ink); background: var(--paper); font: 700 11px var(--mono); text-transform: uppercase; transform: translateY(-150%); transition: transform .2s ease; }
 .skip-link:focus { transform: translateY(0); }
 
-.portfolio { position: relative; min-height: 100vh; }
+.portfolio { --resume-width: min(720px, 48vw); position: relative; min-height: 100vh; }
 .portrait { position: fixed; z-index: 0; inset: 0; overflow: hidden; background: #17242b; }
 .portrait img { object-fit: cover; object-position: center center; }
 .portrait-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(14,25,31,.04), transparent 52%, rgba(10,18,22,.24)); }
+.rover-navigation { display: none; }
+
+@media (min-width: 881px) and (any-hover: hover) and (any-pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .rover-navigation {
+    position: absolute;
+    inset: 0 0 0 var(--resume-width);
+    display: block;
+    width: calc(100% - var(--resume-width));
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .28s ease;
+  }
+  .rover-navigation[data-active] { opacity: 1; }
+}
 .photo-marker { position: absolute; right: 30px; bottom: 28px; margin: 0; color: rgba(255,255,255,.76); font: 650 9px var(--mono); letter-spacing: .16em; text-transform: uppercase; writing-mode: vertical-rl; text-shadow: 0 1px 18px rgba(0,0,0,.45); }
 
-.resume-pane { position: relative; z-index: 1; isolation: isolate; width: min(720px, 48vw); min-width: 480px; margin-left: 0; overflow: clip; border-right: 1px solid rgba(255,255,255,.22); color: var(--paper); background: rgba(5,17,23,.55); box-shadow: inset -1px 0 rgba(255,255,255,.08), 35px 0 100px rgba(4,13,17,.18); backdrop-filter: blur(9px) saturate(1.04); }
+.resume-pane { position: relative; z-index: 1; isolation: isolate; width: var(--resume-width); min-width: 480px; margin-left: 0; overflow: clip; border-right: 1px solid rgba(255,255,255,.22); color: var(--paper); background: rgba(5,17,23,.55); box-shadow: inset -1px 0 rgba(255,255,255,.08), 35px 0 100px rgba(4,13,17,.18); backdrop-filter: blur(9px) saturate(1.04); }
 .resume-pane::before, .resume-pane::after { content: ""; position: fixed; z-index: 0; border-radius: 46% 54% 62% 38% / 42% 38% 62% 58%; filter: blur(72px); pointer-events: none; will-change: transform; }
 .resume-pane::before { top: -30vh; left: -22vw; width: 78vw; height: 125vh; opacity: .3; background: radial-gradient(circle at 32% 36%, rgba(212,106,58,.78), transparent 34%), radial-gradient(circle at 68% 58%, rgba(155,175,182,.6), transparent 42%); animation: liquid-float 18s ease-in-out infinite alternate; }
 .resume-pane::after { top: 42vh; left: 12vw; width: 42vw; height: 68vh; opacity: .18; background: radial-gradient(circle at 50% 45%, rgba(237,176,128,.7), transparent 58%); animation: liquid-float-alt 22s ease-in-out infinite alternate; }
@@ -140,12 +155,14 @@ section, footer { scroll-margin-top: 78px; }
 @keyframes liquid-float-alt { from { transform: translate3d(4%, 5%, 0) rotate(4deg) scale(.96); } to { transform: translate3d(-7%, -4%, 0) rotate(-8deg) scale(1.06); } }
 
 @media (max-width: 1200px) {
-  .resume-pane { width: 52vw; min-width: 470px; }
+  .portfolio { --resume-width: 52vw; }
+  .resume-pane { min-width: 470px; }
   .portrait img { object-position: 54% center; }
 }
 
 @media (max-width: 1000px) {
-  .resume-pane { width: 57vw; min-width: 0; }
+  .portfolio { --resume-width: 57vw; }
+  .resume-pane { min-width: 0; }
   .pane-nav { gap: 18px; }
 }
 

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Gallery from "@/components/Gallery";
+import RoverNavigation from "@/components/RoverNavigation";
 import { education, experience, projects } from "@/content/site";
 
 function ExternalArrow() {
@@ -28,6 +29,7 @@ export default function Home() {
           sizes="100vw"
         />
         <div className="portrait-overlay" aria-hidden="true" />
+        <RoverNavigation />
         <p className="photo-marker">Photo / Malibu, California</p>
       </aside>
 
