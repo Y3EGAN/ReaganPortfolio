@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Gallery from "@/components/Gallery";
-import RoverNavigation from "@/components/RoverNavigation";
+import MatrixField from "@/components/MatrixField";
 import { education, experience, projects } from "@/content/site";
 
 function ExternalArrow() {
@@ -29,11 +29,11 @@ export default function Home() {
           sizes="100vw"
         />
         <div className="portrait-overlay" aria-hidden="true" />
-        <RoverNavigation />
         <p className="photo-marker">Photo / Malibu, California</p>
       </aside>
 
       <div className="resume-pane">
+        <MatrixField />
         <nav className="pane-nav" aria-label="Primary navigation">
           <a className="nav-mark" href="#profile" aria-label="Back to top">RH</a>
           <a href="#work">Experience</a>
@@ -50,7 +50,7 @@ export default function Home() {
           </div>
           <p className="role">Engineering Science student<br />University of Toronto</p>
           <p className="summary">Building the bridge that brings intelligent systems into the real world.</p>
-          <a className="profile-resume" href="/HuReaganCV_2026.pdf" download>Download résumé ↓</a>
+          <a className="profile-resume" href="/HuReaganCV_2027.pdf" download>Download résumé ↓</a>
           <dl className="quick-facts">
             <div><dt>Focus</dt><dd>AI · Robotics · Software</dd></div>
             <div><dt>GPA</dt><dd>{education.gpa}</dd></div>
