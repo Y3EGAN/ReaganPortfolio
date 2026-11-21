@@ -143,11 +143,6 @@ export default function MatrixField() {
       layer.translate(width / 2, height / 2);
 
       if (distortion) {
-        const { x, y, radius } = distortion;
-        layer.beginPath();
-        layer.arc(x, y, radius, 0, 2 * Math.PI);
-        layer.clip();
-        layer.clearRect(x - radius, y - radius, radius * 2, radius * 2);
         paintFacets(layer, distortion, light, shade);
       }
 
@@ -169,14 +164,24 @@ export default function MatrixField() {
       if (!fold) return;
 
       const { x, y, radius } = fold;
-      const left = Math.max(0, Math.floor((x + width / 2 - radius) * scale) - 1);
-      const top = Math.max(0, Math.floor((y + height / 2 - radius) * scale) - 1);
-      const right = Math.min(canvas.width, Math.ceil((x + width / 2 + radius) * scale) + 1);
-      const bottom = Math.min(canvas.height, Math.ceil((y + height / 2 + radius) * scale) + 1);
+      // A deformed vertex can connect to a stationary vertex one edge beyond the falloff.
+      const repaintRadius = radius + edge;
+      const left = Math.max(0, Math.floor((x + width / 2 - repaintRadius) * scale) - 1);
+      const top = Math.max(0, Math.floor((y + height / 2 - repaintRadius) * scale) - 1);
+      const right = Math.min(canvas.width, Math.ceil((x + width / 2 + repaintRadius) * scale) + 1);
+      const bottom = Math.min(canvas.height, Math.ceil((y + height / 2 + repaintRadius) * scale) + 1);
       if (right <= left || bottom <= top) return;
 
-      previousRegion = { x: left, y: top, width: right - left, height: bottom - top };
+      const regionWidth = right - left;
+      const regionHeight = bottom - top;
+      previousRegion = { x: left, y: top, width: regionWidth, height: regionHeight };
+      context.clearRect(left, top, regionWidth, regionHeight);
+      context.save();
+      context.beginPath();
+      context.rect(left, top, regionWidth, regionHeight);
+      context.clip();
       paint(context, fold);
+      context.restore();
     };
 
     const animate = (time: number) => {
