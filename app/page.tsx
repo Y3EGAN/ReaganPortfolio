@@ -43,7 +43,6 @@ export default function Home() {
         </nav>
 
         <section id="profile" className="profile">
-          <p className="section-label">PORTFOLIO / 2026</p>
           <div className="name-lockup">
             <h1>Reagan Hu</h1>
             <span className="chinese-inline" lang="zh-Hans">胡予潇</span>
